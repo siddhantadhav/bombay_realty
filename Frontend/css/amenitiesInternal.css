@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+.amenitiesInternal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.upper{
+    position: relative;
+    z-index: -1;
+    top: 30px;
+}
+
+.upper img{
+    margin-right: 20px;
+}
+
+.middle{
+    width: 100%;
+    z-index: 1;
+}
+
+.middle img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.lower{
+    position: relative;
+    z-index: -1;
+    top: -30px;
+}
+
+.lower img{
+    margin-right: 20px;
+}
+
+.right{
+    margin-left: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#right-head{
+    font-size: 50px;
+    color: #a67564;
+    margin-bottom: 5rem;
+}
+
+.right p{
+    font-size: 24px;
+    color: #a67564;
+}
+
+.right p:nth-of-type(7){
+    padding-left: 15px;
+}

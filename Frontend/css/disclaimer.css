@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f2f1ef;
+}
+
+h1{
+    text-align: center;
+    margin: 10% 0 0 0;
+    color: #a67564;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+    text-align: center;
+    color: #a67564;
+    margin:0 15%;
+    margin-top: 2%;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    color: #a67564;
+    font-style: italic;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container{
+    height: 100vh;
+    background-image: url(../../Resources/welcome_window/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.line{
+    display: flex;
+    width: 2px;
+    height: 100px;
+    background-color: #d9d2cc;
+    margin-top: 1rem;
+}
+
+.left{
+    height: 200px;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.left img{
+    max-height: 100%;
+}
+.right{
+    height: 200px;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.right img{
+    max-height: 100%;
+}
+
+.middle{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Playfair Display', serif;
+}
+
+.middle h1{
+    font-size: 100px;
+    color: #d9d2cc;
+}
+
+.middle h2{
+    font-size: 50px;
+    color: #d9d2cc;
+}
+
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.explore-btn{
+    width: 224px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #a67564;
+    color: #d9d2cc;
+    font-size: 24px;
+    border: 2px solid #d9b18e;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 5px;
+}

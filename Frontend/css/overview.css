@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+/* body{
+    background-color: #f2f1ef;
+} */
+
+.overview-navbar{
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5%;
+}
+
+.overview-navbar li{
+    list-style: none;
+    display: inline-block;
+    color: #f2f1ef;
+    margin-right: 5px;
+}
+
+.overview-navbar a{
+    color: #a67564;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.overview-line{
+    background-color: #a67564;
+    display: flex;
+    width: 1px;
+    height: 10px;
+}
+
+#overview-overview-section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-overview-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    transform: translateY(-20%);
+}
+
+.overview-overview-images{
+    display: flex;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+}
+
+.overview-left-image{
+    display: inline-block;
+    position: absolute;
+    width: 70%;
+
+}
+
+.overview-left-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.overview-right-image{
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    top: -25%;
+    left: 40%;
+    
+}
+
+.overview-right-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.overview-overview-content{
+    width: 50%;
+    display: inline-block;
+    margin-right: 10%;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #a67564;
+}
+
+.overview-overview-content h1{
+    font-size: 50px;
+}
+
+.overview-overview-content img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+

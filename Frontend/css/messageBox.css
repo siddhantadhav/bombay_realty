@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.message-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Resources/welcome_window/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message-pop{
+    height: 440px;
+    width: 734px;
+    background-color: #f2f1ef;
+    border-radius: 12px;
+
+}
+
+.text-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.inp-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.inp-form input::placeholder{
+    font-size: 24px;
+    padding-left: 5%;
+}
+
+.inp-form input{
+    width: 560px;
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid #d9b18e;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.submit-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.submit-btn button{
+    width: 224px;
+    height: 44px;
+    background-color: #a67564;
+    border-radius: 22px;
+    border: 2px solid #d9b18e;
+    font-size: 24px;
+    color: #d9b18e;
+    cursor: pointer;
+}
+
+#head{
+    color: #d9b18e;
+    font-size: 40px;
+}
+#sub-head{
+    color: #d9b18e;
+    font-size:35px;
+}
+
+.close{
+    color: #d9b18e;
+    margin-top: 2%;
+    margin-right: 2%;
+    /* height: 24px;
+    width: 24px; */
+}
+
+.close a{
+    color: #d9b18e;
+    cursor: pointer;
+    text-decoration: none;
+}

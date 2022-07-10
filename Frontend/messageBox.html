@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Realty</title>
+    <link rel="stylesheet" href="css/messageBox.css">
+    <script type="text/javascript" src="../Backend/backend.js"></script>
+</head>
+
+<body>
+    <div class="blurred-bg"></div>
+    <div class="message-container">
+        <div class="message-pop">
+            <form action="to be added">
+                    <div class="text-field">
+                        <div class="text">
+                            <h1 id="head">Visit your Future Home Today!</h1>
+                            <h2 id="sub-head">Contact Us</h2>
+                        </div>
+                        <div class="close"><a href="index.html">&#x2716;</a></div>
+                        
+                    </div>
+                    <div class="inp-form">
+                        <input type="text" placeholder="Name" name="name" required id="name">
+                        <input type="number" placeholder="Contact Number" name="contact" required id="contact">
+                        <input type="email" placeholder="Email" name="email" required id="email">
+                    </div>
+                    <div class="submit-btn">
+                        <button onclick="submit_data()" id="submit_btn">Submit</button>
+                    </div>
+                    <span class="errot"></span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>

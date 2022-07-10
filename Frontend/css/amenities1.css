@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.html{
+    font-size: 62.5%;
+    /* font-family: 'Josefin Sans', sans-serif; */
+} 
+
+body{
+    background-color: #f2f1ef;
+}
+
+#amenities-amenities-header{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#amenities-amenities-header{
+    font-size: 50px;
+    color: #a67564;
+}
+
+.amenities-amenities-container{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 100%; 
+    /* width: 100%; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.amenities-amenities-images{
+    display: flex;
+}
+
+#amenities-two-small-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#amenities-one-small-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amenities-two-small-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+#amenities-two-small-right img{
+    margin-left: 10px;
+}
+
+#amenities-one-small-right{
+    margin-bottom: 10px;
+}
+
+#amenities-one-small-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amenities-big-right{
+    z-index: -1;
+}
+
+#amenities-big-left{
+    position: relative;
+    left: 70px;
+}
+
+#amenities-two-small-left img{
+    margin-left: 10px;
+}
+
+.amenities-left{
+    font-size: 24px;
+    color: #a67564;
+    font-family: 'Josefin Sans', sans-serif;
+}
