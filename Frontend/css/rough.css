@@ -8,7 +8,7 @@
 
 
 
-.container{
+.explore-container{
     height: 100vh;
     background-image: url(../../Resources/welcome_window/01.jpg);
     background-repeat: no-repeat;
@@ -17,14 +17,14 @@
     
 }
 
-.upper{
+.explore-upper{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.line{
+.explore-line{
     display: flex;
     width: 2px;
     height: 100px;
@@ -32,26 +32,26 @@
     margin-top: 1rem;
 }
 
-.left{
+.explore-left{
     height: 200px;
     display: flex;
     margin-right: 1rem;
 }
 
-.left img{
+.explore-left img{
     max-height: 100%;
 }
-.right{
+.explore-right{
     height: 200px;
     display: flex;
     margin-left: 1rem;
 }
 
-.right img{
+.explore-right img{
     max-height: 100%;
 }
 
-.middle{
+.explore-middle{
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -60,24 +60,24 @@
     font-family: 'Playfair Display', serif;
 }
 
-.middle h1{
+.explore-middle h1{
     font-size: 100px;
     color: #d9d2cc;
 }
 
-.middle h2{
+.explore-middle h2{
     font-size: 50px;
     color: #d9d2cc;
 }
 
-.lower{
+.explore-lower{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
 }
 
-.explore-btn{
+.explore-explore-btn{
     width: 224px;
     height: 44px;
     border-radius: 22px;

@@ -5,19 +5,34 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+body{
+    height: 100%;
+    /* overflow: hidden; */
 }
 
-body{
-    background-color: #f2f1ef;
-    scroll-snap-type: y mandatory;
+.container{
+    width: 100%;
+    height: 100%;
+    /* css smooth scroll */
+    overflow-y: scroll;
     overflow-x: hidden;
-    
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 section{
+    width: 100%;
     height: 100vh;
+    scroll-snap-align: center;
+    padding-top: 5vh;
+}
+
+section:nth-of-type(1){
+    padding-top: 0;
+}
+
+#explore{
+    width: 100%;
 }
 
 .carousel-control-next,
@@ -112,8 +127,12 @@ section{
 .overview-navbar{
     width: 100%;
     text-align: center;
-    
-    margin-top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .overview-navbar li{
@@ -131,6 +150,8 @@ section{
     font-size: 24px;
 }
 
+
+
 .overview-line{
     background-color: #a67564;
     display: flex;
@@ -139,16 +160,16 @@ section{
 }
 
 .overview-logo-left{
-    height: 100px;
-    position: relative;
-    top: 10%;
-    left: -300%;
+    /* height: 100px; */
+    width: 100px;
+    /* position: relative; */
+    /* left: -300%; */
 }
 .overview-logo-right{
     height: 100px;
-    position: relative;
+    /* position: relative;
     top: 10%;
-    left: 300%;
+    left: 300%; */
 }
 
 .overview-logo-left img{
@@ -675,4 +696,11 @@ section{
 .disclaimer a{
     color: #a67564;
     font-style: italic;
+}
+
+
+@media screen and (min-width:1360px) {
+    .explore-container{
+        width: 100%;
+    }
 }
