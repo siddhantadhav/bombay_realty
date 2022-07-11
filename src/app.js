@@ -1,16 +1,25 @@
-const { MongoClient } = require('mongodb');
-const url = 'mongodb://localhost:27017';
-const database = 'bombay_realty'
-const client = new MongoClient(url);
+const express = require("express");
+const app = express();
+const path = require("path")
+require("./db/conn");
+const Register = require("./models/submit")
+const port = process.env.PORT || 3000;
+
+const static_path = path.join(__dirname,"../public");
+// console.log(static_path);
 
 
-async function getData(){
+app.use(express.json());
+app.use(express.urlencoded({extended: false}))
 
-    let result = await client.connect();
-    let db = result.db(database);
-    let collection = db.collection('user_data');
-    let response = await collection.find({}).toArray();
-    console.log(response);
-}
+app.use(express.static(static_path));
 
-getData();
+app.get("/", (req, res) => {
+    res.send("index")
+});
+
+
+
+app.listen(port, () => {
+    console.log(`server running`);
+});

@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "init": "^0.1.2",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19",
+    "npm": "^8.13.2"
+  },
+  "name": "bombay_realty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhantadhav/bombay_realty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhantadhav/bombay_realty/issues"
+  },
+  "homepage": "https://github.com/siddhantadhav/bombay_realty#readme",
+  "description": ""
+}
