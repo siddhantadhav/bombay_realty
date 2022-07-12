@@ -109,14 +109,22 @@ section{
 
 /* Overview */
 
+.overview-main-secction{
+    max-width: 100%;
+}
+
 .navbar-container{
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overview-navbar{
     width: 100%;
     text-align: center;
-    
+    max-height: 100%;
+    max-width: 100%;
     margin-top: 5%;
 }
 
@@ -171,7 +179,8 @@ section{
 }
 
 #overview-overview-section{
-    min-height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
     width: 100%;
     display: flex;
     align-items: center;

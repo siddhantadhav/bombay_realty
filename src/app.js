@@ -16,20 +16,52 @@ app.use(express.urlencoded({extended: false}));
 // // console.log(file)
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(file));
+  res.render(path.join(file));
+});
+app.post('/', async (req, res) => {
+  const name = req.body.name;
+  const contact = req.body.contact;
+  const email = req.body.email;
+
+try {
+  const register_user = new Register({
+    name : name,
+    email : email,
+    contact : contact,
+  })
+
+  const registered = await register_user.save();
+  res.status(201).render(index);
+} catch (error) {
+  res.status(400).send(error);
+}
+  console.log(username);
+  console.log(contact);
+  console.log(email);
+
 });
 
-app.post('/', async(req, res) => {
-  try {
-    
+// app.post('/', async(req, res) => {
+//   const username = req.body.name;
+//   const contact = req.body.contact;
+//   const email = req.body.email;
 
-  } catch (error) {
-    res.status(400),send(error);
-  }
-});
+// try {
+//   const register_user = new Register({
+//     username : username,
+//     contact : contact,
+//     email : email
+//   })
+
+//   const registered = await register_user.save();
+//   res.status(201).render(index);
+// } catch (error) {
+//   res.status(400).send(error);
+// }
+
 
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`);
 })
