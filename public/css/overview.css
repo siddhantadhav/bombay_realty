@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a67564;
+    background-color: #f2f1ef;
+}
+
+section{
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+nav .container-fluid{
+    background-color: #f2f1ef;
+    margin: 0;
+    color: #a67564;
+}
+
+.navbar-nav a{
+    color: #a67564;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size : 1.2rem;
+}
+
+#overview-content{
+    max-height: 100%;
+    color: #a67564;
+}
+
+#overview-content h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#overview-content p{
+    max-height: 100%;
+    font-size: 1.5rem;
+}
+
+.overview-overlap{
+    margin-left : -30%;
+}
+
+.overview-overlap img:last-of-type{
+    margin-top: 20%;
+}
+
+.overview-left{
+    align-items: end;
+}
+
+/* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
+
+@media (max-width : 1200px) {
+    .overview-overlap{
+        margin-left : auto;
+        align-self: center;
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a67564;
+    background-color: #f2f1ef;
+}
+
+section{
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #a67564;
+}
+
+.amenities-1-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5%;
+}
+
+p{
+    font-size: 1.5rem;
+}

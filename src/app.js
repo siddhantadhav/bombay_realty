@@ -31,11 +31,11 @@ try {
   })
 
   const registered = await register_user.save();
-  res.status(201).render(index);
+  res.status(201).render(file);
 } catch (error) {
   res.status(400).send(error);
 }
-  console.log(username);
+  console.log(name);
   console.log(contact);
   console.log(email);
 

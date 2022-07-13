@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a67564;
+    background-color: #f2f1ef;
+}
+
+section{
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #a67564;
+}
+
+.highlight-heading{
+    text-align: center;
+    /* padding-top: 2%; */
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-size: 1.5rem
+}
+
+.highlight-overlap{
+    margin-left: -10%;
+}
+
+@media (max-width : 1200px) {
+    .highlight-overlap{
+        margin-left : auto;
+        align-self: center;
+    }
+}
