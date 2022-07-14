@@ -10,7 +10,7 @@ body{
 }
 
 section{
-    height: 100vh;
+    height: 90vh;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -36,6 +36,7 @@ nav .container-fluid{
 #overview-content h1{
     text-align: center;
     font-size: 3rem;
+    margin: 10% 0;
 }
 
 #overview-content p{
@@ -55,11 +56,16 @@ nav .container-fluid{
     align-items: end;
 }
 
+.box-shadow-class{
+    box-shadow: 14px 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
 
 @media (max-width : 1200px) {
     .overview-overlap{
         margin-left : auto;
         align-self: center;
+        
     }
 }

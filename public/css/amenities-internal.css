@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a67564;
+    background-color: #f2f1ef;
+}
+
+section{
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #a67564;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+@media (max-width : 768px) {
+    .amenities-overlap-images img{
+       margin: auto;
+       z-index: auto;
+    }
+}

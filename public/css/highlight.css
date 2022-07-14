@@ -30,9 +30,16 @@ p{
     margin-left: -10%;
 }
 
+.box-shadow-class{
+    box-shadow: 14px 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media (max-width : 1200px) {
     .highlight-overlap{
         margin-left : auto;
         align-self: center;
     }
+    /* .container-fluid{
+        margin: auto;
+    } */
 }
