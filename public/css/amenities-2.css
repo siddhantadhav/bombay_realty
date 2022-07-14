@@ -4,21 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
-    color: #a67564;
-    background-color: #f2f1ef;
-}
 
-section{
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #a67564;
-}
 
 p{
     font-size: 1.5rem;
 }
 
-@media (min-width: 768px) { 
-    
+@media (max-width: 768px) { 
+    .adjust-amenities-margins{
+        margin: auto;
+        align-self: center;
+    }
  }

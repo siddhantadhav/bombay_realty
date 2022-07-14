@@ -4,26 +4,22 @@
     box-sizing: border-box;
 }
 
-body{
-    color: #a67564;
-    background-color: #f2f1ef;
-}
-
-section{
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #a67564;
-}
 
 .highlight-heading{
     text-align: center;
     /* padding-top: 2%; */
+    color: #a67564;
     font-size: 4rem;
     font-family: 'Playfair Display', serif;
 }
 
+h1{
+    color: #a67564;
+}
+
 p{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    color: #a67564;
 }
 
 .highlight-overlap{
