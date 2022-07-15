@@ -31,7 +31,7 @@ try {
   })
 
   const registered = await register_user.save();
-  res.status(201).render(file);
+  res.status(201).send(file);
 } catch (error) {
   res.status(400).send(error);
 }

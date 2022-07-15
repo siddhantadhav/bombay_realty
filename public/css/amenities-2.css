@@ -10,9 +10,16 @@ p{
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) { 
+.adjust-amenities-margins{
+    margin-left: -10%;
+}
+
+@media (max-width: 758px) { 
     .adjust-amenities-margins{
-        margin: auto;
-        align-self: center;
+        margin-left: 0;
+    }
+
+    .amenities-2-center{
+        margin-left: 50%;
     }
  }

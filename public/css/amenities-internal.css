@@ -10,4 +10,8 @@
     .amenities-overlap-images{
         margin: 0;
     }
+
+    .adjust-padding{
+        padding-bottom: 5%;
+    }
 }

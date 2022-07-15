@@ -6,19 +6,7 @@
 
 
 
-explore-container{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../assets/welcome_window/01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
 
-.modal-open{
-    padding-right: 0;
-}
 
 .explore-upper{
     display: flex;
