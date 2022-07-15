@@ -23,3 +23,12 @@ p{
         margin-left: 50%;
     }
  }
+@media (max-width: 1200px) { 
+    .adjust-amenities-margins{
+        margin-left: 0;
+    }
+
+    .amenities-2-center{
+        margin-left: 50%;
+    }
+ }
