@@ -69,9 +69,15 @@
     $(document).ready(function () {
       setTimeout(function () {
         $("#mymodal").modal("show")
+      }, 5000)
+    });
+
+    $(document).ready(function () {
+      setTimeout(function () {
+        $("#mymodal").modal("show")
       })
     });
-    
+
   </script>
 </head>
 
@@ -110,45 +116,76 @@
     </div>
   </div>
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
+  <section style=" height: 100vh; background-repeat: repeat; background-size: cover; width: 100vw; padding: 0;">
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        
+      </ul>
 
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../public/assets/welcome_window/01.jpg" alt="">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../public/assets/welcome_window/new01.png" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="../public/assets/welcome_window/01.jpg" alt="">
+        </div>
+        
+        <div class="container-fluid" style="height: 100%">
+          <div class="row justify-content-center" style="height: 100%; width: 100%;">
+            <div class="col">
+              <div class="row justify-content-center">
+                <div class="col-2 justify-content-end">
+                  <img src="../public/assets/logos/bombay.png" alt="" class="img-fluid" style=" width: 10em;  margin-left: 18%;">
+                </div>
+                <div class="vertical-line d-lg-block d-md-none"
+                  style="margin-top: 2%; width: 1px; height: 100px; background-color: #f2f1ef; padding-top: 40px ; position: relative; margin-left: 2%;">
+                </div>
+                <div class="col-2">
+                  <img src="../public/assets/logos/sapphire.png" alt="" class="img-fluid" style="width: 10em">
+                </div>
+              </div>
+              <div class="row justify-content-center" style="width: 100%; margin-top: 10em;">
+                <div class="col align-self-center">
+                  <h1 style="color: white; text-align: center; font-size: 6rem; font-family: 'Playfair Display';">Island
+                    City
+                  </h1>
+                  <h2 style="color: white; text-align: center; font-size: 3rem; font-family: 'Playfair Display';">The
+                    SOHO
+                    Sway
+                  </h2>
+                </div>
+              </div>
+              <div class="row justify-content-center" style="margin-top: 8em;">
+                <input type="button" value="Explore" onclick="document.getElementById('overview').scrollIntoView();" style="height: 3em; width: 10em; border-radius: 22px; font-family: 'Playfair Display'; color: #f2f1ef; background-color: #a67564; border: 2px solid #d9b18e;">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="../public/assets/welcome_window/02.jpg" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="../public/assets/welcome_window/03.jpg" alt="">
-      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
     </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-
-  </div>
-
-
+  </section>
 
 
   <!-- overview section -->
 
-  <section>
-    <nav class="navbar navbar-expand-lg bg-light">
+  <section id="overview">
+    <!-- <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <img class="img-fluid" src="../public/assets/logos/bombay.png" alt="" style="height: 100px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -178,6 +215,48 @@
         <img class="img-fluid d-none d-lg-block" src="../public/assets/logos/sapphire.png" alt=""
           style="height: 100px;">
       </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: transparent;">
+      <img src="../public/assets/logos/bombay.png" alt="" class="img-fluid" style="height: 100px;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#overview">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <div class="vertical-line d-none d-lg-block"
+            style="width: 1px; height: 10px; background-color: #a67564; padding-top: 40px ;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#highlights">Highlights</a>
+          </li>
+          <div class="vertical-line d-none d-lg-block"
+            style="width: 1px; height: 10px; background-color: #a67564; padding-top: 40px ;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#amenities">Amenities</a>
+          </li>
+          <div class="vertical-line d-none d-lg-block"
+            style="width: 1px; height: 10px; background-color: #a67564; padding-top: 40px ;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <div class="vertical-line d-none d-lg-block"
+            style="width: 1px; height: 10px; background-color: #a67564; padding-top: 40px ;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+          <div class="vertical-line d-none d-lg-block"
+            style="width: 1px; height: 10px; background-color: #a67564; padding-top: 40px ;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#mymodal">You Liked it! Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <img src="../public/assets/logos/sapphire.png" alt="" class="img-fluid d-lg-block d-md-none"
+        style="height: 100px;">
     </nav>
 
     <!-- main content -->
@@ -252,7 +331,8 @@
 
 
 
-  <section id="amenities">
+  <section id="amenities"
+    style="background-image: url(../public/assets/01.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid">
       <h1 class="amenities-1-heading">Amenities</h1><br>
       <div class="row">
@@ -313,7 +393,7 @@
 
   <br>
 
-  <section>
+  <section style="background-image: url(../public/assets/02.png); background-repeat:no-repeat; background-size: cover">
     <div class="container-fluid" style="height: 100%; padding: 0 5%;">
       <div class="row" style="height: 100%; ;">
         <div class="col-lg-9 col-md-12 col-sm-12 align-self-center" style="">
@@ -387,7 +467,8 @@
 
   <br>
 
-  <section>
+  <section
+    style="background-image: url(../public/assets/03.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%;">
       <div class="row" style="height: 100%;">
         <div class="col-lg-5 col-md-12 align-self-center">
@@ -423,7 +504,7 @@
 
   <br>
 
-  <section>
+  <section id="amenities-internal" style=" background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%; padding: 0 5%;">
       <div class="row" style="height: 100%;">
         <div class="col-lg-6 col-md-6 align-self-center">
@@ -475,7 +556,8 @@
 
   <br>
 
-  <section id="gallery">
+  <section id="gallery"
+    style="background-image: url(../public/assets/06.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%; ">
       <h1
         style="margin-bottom: 5%; text-align:center; font-size: 4rem; color: #a67564;     font-family: 'Playfair Display', serif;">
@@ -526,7 +608,7 @@
 
   <br>
 
-  <section id="location">
+  <section id="location" style=" background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%;">
       <h1 style="text-align: center; font-size: 4rem; font-family: 'Playfair Display', serif; color: #a67564;">Location
       </h1><br>
