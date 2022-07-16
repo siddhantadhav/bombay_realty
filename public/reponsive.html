@@ -1,10 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>overview</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resposive</title>
+  <!-- <link rel="icon" href="../public/assets/logos/favicon.jpg"> -->
+
   <link rel="stylesheet" href="css/overview.css">
   <link rel="stylesheet" href="css/highlight.css">
   <link rel="stylesheet" href="css/amenities-1.css">
@@ -12,85 +15,143 @@
   <link rel="stylesheet" href="css/amenities-internal.css">
 
 
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <style>
+    .modal-content {
+      border-radius: 12px;
+      background-color: #f2f1ef;
+      color: #a67564;
+    }
+
+
+    .modal-button {
+      background-color: #a67564;
+      color: #d9b18e;
+      border: 2px solid #d9b18e;
+      border-radius: 22px;
+      height: 20%;
+      width: 30%;
+    }
+
+    .model-header {
+      flex-direction: column;
+    }
+
+    #center-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-group input {
+      border-radius: 10px;
+    }
+  </style>
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      setTimeout(function () {
+        $("#mymodal").modal("show")
+      }, 5000)
+    });
+
+//     $(window).load(function(){
+//    setTimeout(function(){
+//        $('#myModal').modal('show');
+//    }, 2000);
+// });
+
+  </script>
 </head>
 
 <body>
 
-  <!-- modal popup -->
-    <!-- <div class="contact-us-container">
-        <div class="modal " id="mymodal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="message-pop-top">
-                            <h2>Visit your Future Home Today!</h2>
-                            <h3>Contact Us</h3>
-                        </div>
-                        <button class="close" type="button" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" method="POST">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" name="contact" placeholder="Contact Number" minlength="10" maxlength="10">
-                            </div>
-                            <div class="form-group" id="center-bottom">
-                                <input type="submit" class="modal-button" id="submit-data" value="Submit"></input>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+  <div class="contact-us-container">
+    <div class="modal " id="mymodal">
+      <div class="modal-dialog">`
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="message-pop-top">
+              <h2>Visit your Future Home Today!</h2>
+              <h3>Contact Us</h3>
             </div>
-        </div>
-    </div> -->
-
-
-    <div class="container-fluid" style="height: 100vh; ">
-      <div class="row" style="width: 100%; height: 100%;">
-        <div class="" style="height:100%">
-          <div class="row">
-            <div class="col-1">
-              <img src="../public/assets/logos/bombay.png" alt="" class="img-fluid" style="height: 100px;">
-            </div>
-            <div class="col-1">
-              <div class="div" style="width: 2px; height: 100px; background-color:black"></div>
-            </div>
-            <div class="col-1">
-              <img src="../public/assets/logos/sapphire.png" alt="" class="" style="height: 100px;">
-            </div>
-
+            <!-- <button class="close" type="button" data-dismiss="modal" onclick=closeModal()>&times;</button> -->
           </div>
-          <div class="row">
-            <div class="col align-self-center">
-              <h1>Island City</h1>
-              <h1>The SOHO Sway</h1>
-            </div>
-          </div>
-          <div class="row align-self-center">
-            <div class="col align-self-center">
-              <button>Submit</button>
-            </div>
+          <div class="modal-body">
+            <form method="POST" action="/">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="contact" placeholder="Contact Number" minlength="10"
+                  maxlength="10">
+              </div>
+              <div class="form-group" id="center-bottom">
+                <input type="submit" class="modal-button" id="submit-data" value="Submit"></input>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-   
+  </div>
 
-  <!-- explore section -->
+  <section
+    style="background-image: url(../public/assets/welcome_window/01.jpg); height: 100vh; background-repeat: repeat; background-size: cover; width: 100vw; padding: 0;">
+    <div class="container-fluid" style="height: 100%">
+      <div class="row justify-content-center" style="height: 100%; width: 100%;">
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <img src="../public/assets/logos/bombay.png" alt="" class="img-fluid" style=" width: 10em">
+            </div>
+            <div class="col-2">
+              <img src="../public/assets/logos/sapphire.png" alt="" class="img-fluid" style="width: 10em">
+            </div>
+          </div>
+          <div class="row justify-content-center" style="width: 100%; margin-top: 10em;">
+            <div class="col align-self-center">
+              <h1 style="color: white; text-align: center; font-size: 6rem; font-family: 'Playfair Display';">Island
+                City
+              </h1>
+              <h2 style="color: white; text-align: center; font-size: 3rem; font-family: 'Playfair Display';">The SOHO
+                Sway
+              </h2>
+            </div>
+          </div>
+          <div class="row justify-content-center" style="margin-top: 10em;">
+            <button
+              style="height: 3em; width: 10em; border-radius: 22px; font-family: 'Playfair Display'; color: #f2f1ef; background-color: #a67564; border: 2px solid #d9b18e;">Explore</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- overview section -->
 
   <section>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -197,7 +258,8 @@
 
 
 
-  <section id="amenities">
+  <section id="amenities"
+    style="background-image: url(../public/assets/01.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid">
       <h1 class="amenities-1-heading">Amenities</h1><br>
       <div class="row">
@@ -258,60 +320,58 @@
 
   <br>
 
-  <section>
+  <section style="background-image: url(../public/assets/02.png); background-repeat:no-repeat; background-size: cover">
     <div class="container-fluid" style="height: 100%; padding: 0 5%;">
       <div class="row" style="height: 100%; ;">
-        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center" style="">
+        <div class="col-lg-9 col-md-12 col-sm-12 align-self-center" style="">
           <div class="row" style="height: 100%;">
-            <div class="col-lg-6 col-md-6 col-sm-12 align-self-center" style="margin-bottom: 5%;">
-              <img class="img-fluid box-shadow-class" src="../public/assets/Amenities/External/Section02/01.png" alt=""
-                class="img-fluid" style="height: 100%; width: 100%">
+            <div class="col-lg-5 col-md-6 col-sm-12 align-self-center" style="margin-bottom: 5%;">
+              <img class="img-fluid" src="../public/assets/Amenities/External/Section02/01.png" alt="" class="img-fluid"
+                style="height: 100%; width: 100%">
             </div>
 
             <!-- center images -->
-            <div class="col-md-6 col-sm-12 align-self-center" style="margin-left: -10%;">
+            <div class="col-md-6 col-sm-12 align-self-center adjust-amenities-margins" style="">
               <div class="row" style="margin-bottom: 5%;">
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class" class="img-fluid"
+                  <img class="img-fluid" class="img-fluid"
                     src="../public/assets/Amenities/External/Section02/upper01.png" alt=""
                     style="height:100%; width:100%;">
                 </div>
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class" class="img-fluid"
+                  <img class="img-fluid" class="img-fluid"
                     src="../public/assets/Amenities/External/Section02/upper02.png" alt=""
                     style="height:100%; width:100%;">
                 </div>
               </div>
               <div class="row" style="margin-bottom: 5%;">
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class"
+                  <img class="img-fluid amenities-2-center"
                     src="../public/assets/Amenities/External/Section02/centre01.png" alt=""
-                    style="height:100%; width:100%; margin-left: 50%">
+                    style="height:100%; width:100%; margin-left: 60%">
                 </div>
               </div>
               <div class="row" style="margin-bottom: 5%;">
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class"
+                  <img class="img-fluid amenities-2-center"
                     src="../public/assets/Amenities/External/Section02/centre02.png" alt=""
-                    style="height:100%; width:100%; margin-left: 50%">
+                    style="height:100%; width:100%; margin-left: 60%">
                 </div>
               </div>
               <div class="row" style="margin-bottom: 5%;">
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class"
-                    src="../public/assets/Amenities/External/Section02/lower01.png" alt=""
+                  <img class="img-fluid" src="../public/assets/Amenities/External/Section02/lower01.png" alt=""
                     style="height:100%; width:100%;">
                 </div>
                 <div class="col-6">
-                  <img class="img-fluid box-shadow-class"
-                    src="../public/assets/Amenities/External/Section02/lower02.png" alt=""
+                  <img class="img-fluid" src="../public/assets/Amenities/External/Section02/lower02.png" alt=""
                     style="height:100%; width:100%;">
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col align-self-center" style="padding-left: 5%">
+        <div class="col align-self-center" style="">
           <div class="container">
             <p>- Swimming pool</p>
             <p>- Kid’s pool</p>
@@ -334,11 +394,12 @@
 
   <br>
 
-  <section>
+  <section
+    style="background-image: url(../public/assets/03.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%;">
       <div class="row" style="height: 100%;">
         <div class="col-lg-5 col-md-12 align-self-center">
-          <div class="container" style="padding: 5% 10%;">
+          <div class="container-fluid" style="padding: 0 10%;">
             <p>- Yoga lawn</p>
             <p>- Skating area</p>
             <p>- Tennis court</p>
@@ -370,33 +431,34 @@
 
   <br>
 
-  <section>
+  <section id="amenities-internal" style=" background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%; padding: 0 5%;">
       <div class="row" style="height: 100%;">
         <div class="col-lg-6 col-md-6 align-self-center">
           <div class="row" style="">
-            <div class="col-lg-6 col-md-6 " style="margin-bottom: ;">
+            <div class="col-lg-6 col-md-6 adjust-padding" style="">
               <img src="../public/assets/Amenities/Internal/01.png" alt="" class="img-fluid box-shadow-class"
                 style="width: 100%; ">
             </div>
-            <div class="col">
+            <div class="col adjust-padding">
               <img src="../public/assets/Amenities/Internal/02.png" alt="" class="img-fluid box-shadow-class"
                 style="width: 100%;">
 
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-md-6  d-none d-lg-flex d-md-flex">
-              <img src="../public/assets/Amenities/Internal/03.png" alt="" class="img-fluid box-shadow-class amenities-overlap-images"
+            <div class="col-lg-6 col-md-6  d-none d-lg-flex d-md-flex adjust-padding">
+              <img src="../public/assets/Amenities/Internal/03.png" alt=""
+                class="img-fluid box-shadow-class amenities-overlap-images"
                 style="width: 100%; margin-left: 50%; z-index: 999; margin: -10% 55%; ">
             </div>
           </div>
           <div class="row" style="">
-            <div class="col-lg-6 col-md-6 ">
+            <div class="col-lg-6 col-md-6 adjust-padding">
               <img id="amenties-internal-overlap" src="../public/assets/Amenities/Internal/04.png" alt=""
                 class="img-fluid box-shadow-class" style="width: 100%;">
             </div>
-            <div class="col">
+            <div class="col adjust-padding">
               <img src="../public/assets/Amenities/Internal/05.png  " alt="" class="img-fluid box-shadow-class"
                 style="width: 100%; ">
             </div>
@@ -421,7 +483,8 @@
 
   <br>
 
-  <section id="gallery">
+  <section id="gallery"
+    style="background-image: url(../public/assets/06.png); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%; ">
       <h1
         style="margin-bottom: 5%; text-align:center; font-size: 4rem; color: #a67564;     font-family: 'Playfair Display', serif;">
@@ -472,43 +535,46 @@
 
   <br>
 
-  <section id="location">
+  <section id="location" style=" background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid" style="height: 100%;">
-        <h1 style="text-align: center; font-size: 4rem; font-family: 'Playfair Display', serif; color: #a67564;">Location</h1><br>
-        <div class="row align-items-center" style="height: 100%;">
-            <div class="col-lg-4 col-md-6 col-sm-12 align-items-center" style="padding-bottom: 5%;">
-                <div class="container">
-                    <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Current Infrastructure</h1>
-                    <p>- Eastern Freeway (15 minutes)</p>
-                    <p>- Monorail (Next to the project)</p>
-                    <p>- Eastern Express Highway (5 minutes)</p>
-                    <p>- Wadala 4 Roads (5 minutes)</p>
-                    <p>- Water Transport Hub (20 minutes)</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 align-items-center" style="padding-bottom: 5%;">
-                <div class="container">
-                    <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Ongoing Infrastructure</h1>
-                    <p>- Mumbai Trans-Harbour Link</p>
-                    <p>- Coastal Road</p>
-                </div>
-                <div class="container">
-                    <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Upcoming Infrastructure</h1>
-                    <p>- MTHL Dispersal Road</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 align-items-center">
-                <img src="../public/assets/Location section/01.png" alt="" class="img-fluid">
-            </div>
+      <h1 style="text-align: center; font-size: 4rem; font-family: 'Playfair Display', serif; color: #a67564;">Location
+      </h1><br>
+      <div class="row align-items-center" style="height: 100%;">
+        <div class="col-lg-4 col-md-6 col-sm-12 align-items-center" style="padding-bottom: 5%;">
+          <div class="container">
+            <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Current Infrastructure</h1>
+            <p>- Eastern Freeway (15 minutes)</p>
+            <p>- Monorail (Next to the project)</p>
+            <p>- Eastern Express Highway (5 minutes)</p>
+            <p>- Wadala 4 Roads (5 minutes)</p>
+            <p>- Water Transport Hub (20 minutes)</p>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 align-items-center" style="padding-bottom: 5%;">
+          <div class="container">
+            <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Ongoing Infrastructure</h1>
+            <p>- Mumbai Trans-Harbour Link</p>
+            <p>- Coastal Road</p>
+          </div>
+          <div class="container">
+            <h1 style="font-size: 3rem; font-family: ; color: #a67564 ;">Upcoming Infrastructure</h1>
+            <p>- MTHL Dispersal Road</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 align-items-center">
+          <img src="../public/assets/Location section/01.png" alt="" class="img-fluid">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <section>
 
     <div class="container-fluid">
-      <h1 style="text-align: center; padding-bottom: 5%; padding: 5% 10%; font-size: 3rem; color: #a67564;">Disclaimer</h1>
-      <p>All image/s are strictly for representational purposes. The specifications, pictures, images, aesthetics,
+      <h1 style="text-align: center; padding-bottom: 5%; padding: 5% 10%; font-size: 3rem; color: #a67564;">Disclaimer
+      </h1>
+      <p style="text-align:center;">All image/s are strictly for representational purposes. The specifications,
+        pictures, images, aesthetics,
         features, views, amenities,
         facilities and surroundings shown / mentioned are only for representational, illustrational and indicative
         purpose, and the terms
@@ -519,7 +585,8 @@
         are not part of the standard final amenities & finishes and the actual amenities will vary in planning and upon
         actual construction.
         Prospective customers are requested to refer to the sanctioned plans for further information for the phase or
-        visit <a href="https://maharera.mahaonline.gov.in/" target="_blank">https://maharera.mahaonline.gov.in/</a> for further details. Terms & Conditions apply. This website is meant
+        visit <a href="https://maharera.mahaonline.gov.in/" target="_blank">https://maharera.mahaonline.gov.in/</a> for
+        further details. Terms & Conditions apply. This website is meant
         only for
         information purposes. It should not be considered/claimed as an ocial site. This website belongs to authorized
         channel partner of
@@ -527,6 +594,7 @@
     </div>
   </section>
 
+  <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
