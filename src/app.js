@@ -25,6 +25,8 @@ app.post("/", async (req, res) => {
   const contact = req.body.contact;
   const email = req.body.email;
 
+  
+
 try {
   const register_user = new Register({
     name : name,
@@ -33,13 +35,11 @@ try {
   })
 
   const registered = await register_user.save();
-  res.redirect("/");
+  res.redirect(file);
 } catch (error) {
   res.status(400).send(error);
 }
-  // console.log(name);
-  // console.log(contact);
-  // console.log(email);
+
 
 });
 
