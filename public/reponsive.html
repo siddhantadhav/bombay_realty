@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bombay Realty</title>
+  <title>Responsive</title>
   <!-- <link rel="icon" href="../public/assets/logos/favicon.jpg"> -->
 
   <link rel="stylesheet" href="css/overview.css">
@@ -15,6 +15,84 @@
   <link rel="stylesheet" href="css/amenities-internal.css">
 
 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <style>
+    .modal-content {
+      border-radius: 12px;
+      background-color: #f2f1ef;
+      color: #a67564;
+    }
+
+
+    .modal-button {
+      background-color: #a67564;
+      color: #d9b18e;
+      border: 2px solid #d9b18e;
+      border-radius: 22px;
+      height: 20%;
+      width: 30%;
+    }
+
+    .model-header {
+      flex-direction: column;
+    }
+
+    #center-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-group input {
+      border-radius: 10px;
+    }
+  </style>
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      setTimeout(function () {
+        $("#mymodal").modal("show")
+      }, 5000)
+    });
+
+    
+
+  </script>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bombay Realty</title>
+  
+  <!-- External -->
+  <link rel="stylesheet" href="css/overview.css">
+  <link rel="stylesheet" href="css/highlight.css">
+  <link rel="stylesheet" href="css/amenities-1.css">
+  <link rel="stylesheet" href="css/amenities-2.css">
+  <link rel="stylesheet" href="css/amenities-internal.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap"
     rel="stylesheet">
@@ -117,7 +195,7 @@
   </div>
   </div>
 
-  <section style=" height: 100vh; background-repeat: repeat; background-size: cover; width: 100vw; padding: 0;">
+  <section style="  background-repeat: repeat; background-size: cover; width: 100vw; padding: 0;">
     <div id="demo" class="carousel slide" data-ride="carousel">
 
       <!-- Indicators -->
@@ -168,8 +246,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
 
@@ -254,13 +330,9 @@
         <!-- content -->
         <div class="col-lg-6 col-md-12 align-self-center" id="overview-content">
           <h1 style="font-family: 'Playfair Display', serif; font-size: 4rem; color:; ">Overview</h1>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC, making
-            it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            and going through the cites of the word in classical literature,
-            discovered the undoubtable source.</p>
+          <p>The most fashionable cities in the world have SOHO in common. The most fashionable neighbourhoods, noted for being exclusive and very culturally relevant, can be found in both New York City and London. The phrase "the place to be" is made famous by the term SOHO, which evokes ideas of high society, couture, and fashion.
+
+            Beautiful sea views, wide open spaces, and high-end lifestyle amenities will be available to Bombay Reality residents, making living here truly special.</p>
           <img class="img-fluid" src="../public/assets/Overviewsection/art.png" alt="">
         </div>
       </div>
@@ -656,4 +728,3 @@
     crossorigin="anonymous"></script>
 </body>
 
-</html>

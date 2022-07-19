@@ -72,6 +72,9 @@ nav .container-fluid{
     background-image: url(../assets/06.png);
 }
 
+
+
+
 /* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
 
 @media (max-width : 1200px) {
