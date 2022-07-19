@@ -1,74 +1,72 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     color: #a67564;
     background-color: #f2f1ef;
-    font-size: 1.5rem;  
-    
+    font-size: 1.5rem;
+
 }
 
-section{
+section {
     padding: 0 5%;
     width: 100vw;
 }
 
 
 
-nav .container-fluid{
+nav .container-fluid {
     background-color: transparent;
     margin: 0;
     color: #a67564;
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: #a67564;
     font-family: 'Josefin Sans', sans-serif;
-    font-size : 1.2rem;
+    font-size: 1.2rem;
 }
 
-#overview-content{
+#overview-content {
     max-height: 100%;
     color: #a67564;
 }
 
-#overview-content h1{
+#overview-content h1 {
     text-align: center;
     font-size: 3rem;
     margin: 10% 0;
 }
 
-#overview-content p{
+#overview-content p {
     max-height: 100%;
     font-size: 1.5rem;
 }
 
-.overview-overlap{
-    margin-left : -30%;
+.overview-overlap {
+    margin-left: -30%;
 }
 
-.overview-overlap img:last-of-type{
+.overview-overlap img:last-of-type {
     margin-top: 20%;
 }
 
-.overview-left{
+.overview-left {
     align-items: end;
 }
 
-.box-shadow-class{
+.box-shadow-class {
     box-shadow: 14px 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#amenities-internal{
+#amenities-internal {
     background-image: url(../assets/04.png);
 }
 
-#location{
+#location {
     background-image: url(../assets/06.png);
 }
 
@@ -78,30 +76,34 @@ nav .container-fluid{
 /* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
 
 @media (max-width : 1200px) {
-    .overview-overlap{
-        margin-left : auto;
+    .overview-overlap {
+        margin-left: auto;
         align-self: center;
-        
+
     }
 
-    #adjust-amenities-2{
+    #adjust-amenities-2 {
         margin-left: 0%;
     }
 }
 
 @media (max-width: 767px) {
-    #amenities-internal{
+    #amenities-internal {
         background-image: none;
     }
 
-    #main-heading{
+    #main-heading {
         padding-left: 15%;
     }
-    
+
+    * {
+        padding-left: 0;
+    }
+
 }
 
-@media (max-height: 992px){
-    #location{
+@media (max-height: 992px) {
+    #location {
         background-image: none;
     }
 }
