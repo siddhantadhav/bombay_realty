@@ -24,12 +24,14 @@ app.post("/", async (req, res) => {
   const name = req.body.name;
   const contact = req.body.contact;
   const email = req.body.email;
+  const country = req.body.country;
 
   try {
     const register_user = new Register({
       name: name,
       email: email,
       contact: contact,
+      country: country
     })
 
     const registered = await register_user.save();

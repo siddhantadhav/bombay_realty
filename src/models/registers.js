@@ -15,6 +15,11 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required:true
 
+    },
+
+    country: {
+        type: Number,
+        required: true
     }
 })
 
