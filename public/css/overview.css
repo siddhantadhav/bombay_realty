@@ -94,7 +94,9 @@ nav .container-fluid{
         background-image: none;
     }
 
-    
+    #main-heading{
+        padding-left: 15%;
+    }
     
 }
 
